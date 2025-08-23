@@ -144,10 +144,10 @@ data:
         secret: MW2sV-sIPngEl26vAzatV-6VqfsgAx4bPIz7PuE_2Lk=
       providers:
         keycloak-oidc:
-            metadataUrl: ${KEYCLOAK_NAME_METADATA}
-            clientId: backstage
-            clientSecret: ${KEYCLOAK_CLIENT_SECRET}
-            prompt: auto
+          metadataUrl: ${KEYCLOAK_NAME_METADATA}
+          clientId: backstage
+          clientSecret: ${KEYCLOAK_CLIENT_SECRET}
+          prompt: auto
 
     scaffolder:
       # see https://backstage.io/docs/features/software-templates/configuration for software template options
