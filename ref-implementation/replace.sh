@@ -34,5 +34,3 @@ if [[ ${NEW_PORT} == "443" ]]; then
 fi
 
 echo "Replacement complete."
-echo "Note: The global-config.yaml file has been updated with the new host and port values."
-echo "This will allow backstage, keycloak, and argo-workflows to use the new configuration."
