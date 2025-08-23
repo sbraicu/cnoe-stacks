@@ -48,6 +48,16 @@ spec:
               value: ALL
             - name: QUARKUS_TRANSACTION_MANAGER_ENABLE_RECOVERY
               value: 'true'
+            - name: KEYCLOAK_HOSTNAME
+              valueFrom:
+                secretKeyRef:
+                  name: keycloak-config-values
+                  key: KEYCLOAK_HOSTNAME
+            - name: KEYCLOAK_PORT
+              valueFrom:
+                secretKeyRef:
+                  name: keycloak-config-values
+                  key: KEYCLOAK_PORT
           envFrom:
             - secretRef:
                 name: keycloak-config
@@ -83,12 +93,12 @@ data:
     proxy=edge
     
     # hostname configuration
-    hostname=cnoe.localtest.me
-    hostname-port=8443
+    hostname=${KEYCLOAK_HOSTNAME}
+    hostname-port=${KEYCLOAK_PORT}
     http-relative-path=keycloak
     
     # the admin url requires its own configuration to reflect correct url
-    hostname-admin=cnoe.localtest.me:8443
+    hostname-admin=${KEYCLOAK_HOSTNAME}:${KEYCLOAK_PORT}
     
     hostname-debug=true
     

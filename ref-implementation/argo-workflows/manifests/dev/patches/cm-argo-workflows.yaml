@@ -7,14 +7,14 @@ data:
   config: |
     sso:
       insecureSkipVerify: true 
-      issuer: https://cnoe.localtest.me:8443/keycloak/realms/cnoe
+      issuer: ${ARGO_WORKFLOWS_KEYCLOAK_ISSUER}
       clientId:
         name: keycloak-oidc
         key: client-id
       clientSecret:
         name: keycloak-oidc
         key: secret-key
-      redirectUrl: https://cnoe.localtest.me:8443/argo-workflows/oauth2/callback
+      redirectUrl: ${ARGO_WORKFLOWS_REDIRECT_URL}
       rbac:
         enabled: true
       scopes:

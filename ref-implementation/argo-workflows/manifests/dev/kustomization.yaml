@@ -3,6 +3,7 @@ resources:
   - external-secret.yaml
   - ingress.yaml
   - sa-admin.yaml
+  - argo-workflows-config-secret.yaml
 patches:
   - path: patches/cm-argo-workflows.yaml
   - path: patches/deployment-argo-server.yaml

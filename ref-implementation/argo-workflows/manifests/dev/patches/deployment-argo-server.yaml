@@ -18,6 +18,16 @@ spec:
           env:
             - name: BASE_HREF
               value: "/argo-workflows/"
+            - name: ARGO_WORKFLOWS_KEYCLOAK_ISSUER
+              valueFrom:
+                secretKeyRef:
+                  name: argo-workflows-config-values
+                  key: KEYCLOAK_ISSUER
+            - name: ARGO_WORKFLOWS_REDIRECT_URL
+              valueFrom:
+                secretKeyRef:
+                  name: argo-workflows-config-values
+                  key: REDIRECT_URL
           args:
             - server
             - --configmap=workflow-controller-configmap
