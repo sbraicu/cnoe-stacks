@@ -19,7 +19,7 @@ spec:
                 name: argo-server
                 port:
                   name: web
-    - host: localhost
+    - host: outshift-lab-6jv7425.demos.eticloud.io
       http:
         paths:
           - path: /argo-workflows(/|$)(.*)

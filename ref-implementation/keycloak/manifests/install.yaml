@@ -83,12 +83,12 @@ data:
     proxy=edge
     
     # hostname configuration
-    hostname=localhost
+    hostname=outshift-lab-6jv7425.demos.eticloud.io
     hostname-port=8443
     http-relative-path=keycloak
     
     # the admin url requires its own configuration to reflect correct url
-    hostname-admin=localhost:8443
+    hostname-admin=outshift-lab-6jv7425.demos.eticloud.io:8443
     
     hostname-debug=true
     

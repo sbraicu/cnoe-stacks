@@ -18,7 +18,7 @@ spec:
                 name: keycloak
                 port:
                   name: http
-    - host: localhost
+    - host: outshift-lab-6jv7425.demos.eticloud.io
       http:
         paths:
           - path: /keycloak

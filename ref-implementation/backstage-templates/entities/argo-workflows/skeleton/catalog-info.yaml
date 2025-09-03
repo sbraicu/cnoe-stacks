@@ -14,7 +14,7 @@ metadata:
     apache-spark.cnoe.io/label-selector: env=dev,entity-id=${{values.name}}
     apache-spark.cnoe.io/cluster-name: local
   links:
-    - url: https://localhost:8443/gitea
+    - url: https://outshift-lab-6jv7425.demos.eticloud.io:8443/gitea
       title: Repo URL
       icon: github
 spec:

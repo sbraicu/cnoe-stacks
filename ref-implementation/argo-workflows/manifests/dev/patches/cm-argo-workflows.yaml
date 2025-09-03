@@ -7,14 +7,14 @@ data:
   config: |
     sso:
       insecureSkipVerify: true 
-      issuer: https://localhost:8443/keycloak/realms/cnoe
+      issuer: https://outshift-lab-6jv7425.demos.eticloud.io:8443/keycloak/realms/cnoe
       clientId:
         name: keycloak-oidc
         key: client-id
       clientSecret:
         name: keycloak-oidc
         key: secret-key
-      redirectUrl: https://localhost:8443/argo-workflows/oauth2/callback
+      redirectUrl: https://outshift-lab-6jv7425.demos.eticloud.io:8443/argo-workflows/oauth2/callback
       rbac:
         enabled: true
       scopes:
