@@ -83,12 +83,12 @@ data:
     proxy=edge
     
     # hostname configuration
-    hostname=127.0.0.1
-    hostname-port=8080
+    hostname=localhost
+    hostname-port=8443
     http-relative-path=keycloak
     
     # the admin url requires its own configuration to reflect correct url
-    hostname-admin=127.0.0.1:8080
+    hostname-admin=localhost:8443
     
     hostname-debug=true
     

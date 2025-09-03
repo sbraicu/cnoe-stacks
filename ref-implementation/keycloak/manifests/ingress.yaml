@@ -18,7 +18,7 @@ spec:
                 name: keycloak
                 port:
                   name: http
-    - host: 127.0.0.1
+    - host: localhost
       http:
         paths:
           - path: /keycloak
